@@ -1,0 +1,27 @@
+{
+  "linkedin": {
+    "base_url": "https://www.linkedin.com",
+    "sales_navigator_url": "https://www.linkedin.com/sales",
+    "cookie_env_var": "LINKEDIN_SALES_NAV_COOKIE"
+  },
+  "scraper": {
+    "request_timeout": 20,
+    "rate_limit_seconds": 1.2
+  },
+  "automation": {
+    "max_daily_connections": 20,
+    "min_delay_seconds": 4.0,
+    "max_delay_seconds": 10.0,
+    "messaging_enabled": true,
+    "delay_after_connection_seconds": 2.5,
+    "require_connection_sent": true,
+    "message_template": "Hi {first_name}, I came across your profile on LinkedIn Sales Navigator and thought it would be great to connect. I appreciate your work at {company} and would love to stay in touch."
+  },
+  "data": {
+    "input_profiles_path": "data/input_profiles.csv",
+    "output_results_path": "data/output_results.json"
+  },
+  "logging": {
+    "level": "INFO"
+  }
+}
