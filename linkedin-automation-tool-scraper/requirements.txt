@@ -1,0 +1,2 @@
+# No external dependencies are required for this project.
+# The standard library is sufficient to run src/main.py.
